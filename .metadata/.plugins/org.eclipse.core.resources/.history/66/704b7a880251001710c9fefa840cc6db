@@ -1,0 +1,28 @@
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Connection;
+
+public class DBConnect {
+	
+	
+	Connection conn;
+	
+	
+	public DBConnect() throws ClassNotFoundException, SQLException{
+		
+		
+		String hostname = "localhost";
+		String dbname = "Grocery";
+		String username = "root";
+		String password = "";
+		
+		
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		
+		
+	}
+	
+	
+
+}
