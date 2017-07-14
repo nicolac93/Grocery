@@ -57,13 +57,13 @@ public class DBConnect {
 	}
 	
 	
-	public void insertUser(String nome, String cognome, String indirizzo, String città, String password, String email, String telefono) throws SQLException{
+	public void insertUser(String nome, String cognome, String indirizzo, String citta, String password, String email, String telefono) throws SQLException{
 		
 		
 		Statement stm = conn.createStatement();
 		
 		String sql = "INSERT INTO users (nome,cognome,indirizzo,citta,password,email,telefono)" 
-				+ "VALUES('"+nome+"','"+cognome+"' , '"+indirizzo+"' , '"+città+"', '"+password+"', '"+email+"' , '"+telefono+"' )";
+				+ "VALUES('"+nome+"','"+cognome+"' , '"+indirizzo+"' , '"+citta+"', '"+password+"', '"+email+"' , '"+telefono+"' )";
 		
 		
 		
